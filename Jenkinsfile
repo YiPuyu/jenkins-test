@@ -5,7 +5,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 echo '拉取代码...'
-                git 'https://github.com/YiPuyu/jenkins-test.git'
+                git branch: 'main', url: 'https://github.com/YiPuyu/jenkins-test.git'
             }
         }
 
